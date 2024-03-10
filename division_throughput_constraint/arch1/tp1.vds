@@ -1,0 +1,341 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Feb 29 16:36:16 2024
+# Process ID: 135272
+# Current directory: /user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/tp_1_division/tp_1_division.runs/synth_1
+# Command line: vivado -log tp1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tp1.tcl
+# Log file: /user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/tp_1_division/tp_1_division.runs/synth_1/tp1.vds
+# Journal file: /user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/tp_1_division/tp_1_division.runs/synth_1/vivado.jou
+# Running On: pc3407c, OS: Linux, CPU Frequency: 3007.572 MHz, CPU Physical cores: 8, Host memory: 16538 MB
+#-----------------------------------------------------------
+Sourcing tcl script '/nfs/opt/eda/tools/amd/vitis-2022.1/Vivado/2022.1/scripts/Vivado_init.tcl'
+ESIEE Paris custom init
+(/nfs/opt/eda/tools/amd/vitis-2022.1/Vivado/2022.1/scripts/Vivado_init.tcl)
+(others ESIEE custom config in : ~/.Xilinx/Vivado/2022.1/vivado.ini)
+ * Checking LANG, result should be en_US.UTF-8 : result=en_US.UTF-8
+ * Raising 'multi-driven net on pin' (critical warning) severity to error
+source tp1.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Synth 8-6859}  -new_severity {ERROR} '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2579.094 ; gain = 0.023 ; free physical = 8783 ; free virtual = 20375
+Command: read_checkpoint -auto_incremental -incremental /user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/tp_1_division/tp_1_division.srcs/utils_1/imports/synth_1/tp1.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/tp_1_division/tp_1_division.srcs/utils_1/imports/synth_1/tp1.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top tp1 -part xc7a100tcsg324-1 -debug_log
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 135332
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2579.301 ; gain = 0.000 ; free physical = 6866 ; free virtual = 18458
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tp1' [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/tp1.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'non_restoring_division' [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:26]
+	Module non_restoring_division : Parameter N_dividend bound to: 12 - type: integer 
+	Module non_restoring_division : Parameter N_divisor bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'non_restoring_division' (0#1) [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'tp1' (0#1) [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/tp1.vhd:16]
+INFO: [Synth 8-7261] Parallel RTL Optimization Phase 1 criteria is not met
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2579.301 ; gain = 0.000 ; free physical = 7853 ; free virtual = 19445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2579.301 ; gain = 0.000 ; free physical = 7851 ; free virtual = 19443
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2579.301 ; gain = 0.000 ; free physical = 7851 ; free virtual = 19443
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2579.301 ; gain = 0.000 ; free physical = 7844 ; free virtual = 19436
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/nexys4ddr.xdc]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/nexys4ddr.xdc:6]
+Finished Parsing XDC File [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/nexys4ddr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/nexys4ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tp1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tp1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2643.332 ; gain = 0.000 ; free physical = 7681 ; free virtual = 19273
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2643.332 ; gain = 0.000 ; free physical = 7681 ; free virtual = 19273
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7815 ; free virtual = 19407
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7815 ; free virtual = 19407
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7815 ; free virtual = 19407
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/rtl/non_restoring_division.vhd:61]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7807 ; free virtual = 19399
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   13 Bit       Adders := 39    
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 10    
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   13 Bit        Muxes := 48    
+	   2 Input   12 Bit        Muxes := 3     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 39    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tp1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 10    
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+Module non_restoring_division 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   13 Bit       Adders := 13    
+	   2 Input   12 Bit       Adders := 1     
++---Muxes : 
+	   2 Input   13 Bit        Muxes := 16    
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7797 ; free virtual = 19389
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_multicycle_path : Empty through list for constraint at line 5 of /user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/nexys4ddr.xdc. [/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/nexys4ddr.xdc:5]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7677 ; free virtual = 19269
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7662 ; free virtual = 19254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7662 ; free virtual = 19254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7662 ; free virtual = 19254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7662 ; free virtual = 19254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7663 ; free virtual = 19255
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7664 ; free virtual = 19255
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7664 ; free virtual = 19255
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7664 ; free virtual = 19255
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   165|
+|3     |LUT1   |    36|
+|4     |LUT2   |   149|
+|5     |LUT3   |    34|
+|6     |LUT4   |   370|
+|7     |LUT5   |    19|
+|8     |LUT6   |    79|
+|9     |FDCE   |   122|
+|10    |IBUF   |    26|
+|11    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------------------+------+
+|      |Instance |Module                   |Cells |
++------+---------+-------------------------+------+
+|1     |top      |                         |  1025|
+|2     |  div1   |non_restoring_division   |    87|
+|3     |  div2   |non_restoring_division_0 |    99|
+|4     |  div3   |non_restoring_division_1 |    87|
++------+---------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7664 ; free virtual = 19255
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 2643.332 ; gain = 0.000 ; free physical = 7713 ; free virtual = 19305
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 2643.332 ; gain = 64.031 ; free physical = 7714 ; free virtual = 19306
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2643.332 ; gain = 0.000 ; free physical = 7807 ; free virtual = 19399
+INFO: [Netlist 29-17] Analyzing 165 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2643.332 ; gain = 0.000 ; free physical = 7750 ; free virtual = 19342
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 1c9927bf
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 2643.332 ; gain = 64.238 ; free physical = 7847 ; free virtual = 19439
+INFO: [Common 17-1381] The checkpoint '/user/didouha/E4/P3/SEI4301A/TP1/tp1/tp1/impl/tp_1_division/tp_1_division.runs/synth_1/tp1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tp1_utilization_synth.rpt -pb tp1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 29 16:37:26 2024...
