@@ -1,9 +1,13 @@
+/* 
+* Author : Abel DIDOUH
+* Description : Binary to Binary Coded Decimal
+*/
 module testbench;
 
     localparam N = 8;
 
     logic [N-1:0] data_in;
-    logic [4*$ceil($log10($pow(2, N)))-1:0] data_out;
+    logic [int'(4*$ceil($log10($pow(2, N)))-1)+4:0] data_out;
 
     bin2bcd #(.N(N)) dut (
         .data_in(data_in),

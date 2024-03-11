@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Stopped at time : 1010 ns : File "C:/Users/Abel/Documents/GitHub/Hardware_Accelerators/bin2bcd/tb/tb_bin2bcd.sv" Line 21
+Stopped at time : 1010 ns : File "C:/Users/Abel/Documents/GitHub/Hardware_Accelerators/bin2bcd/tb/tb_bin2bcd.sv" Line 19
+$finish called at time : 2621440 ns : File "C:/Users/Abel/Documents/GitHub/Hardware_Accelerators/bin2bcd/tb/tb_bin2bcd.sv" Line 23
