@@ -12,7 +12,7 @@ module testbench;
 
     initial begin
         data_in = 0;
-        repeat (256) begin
+        repeat ($pow(2,N)) begin
             #10; // Wait for some time before changing the input
             data_in = data_in + 1; 
         end
