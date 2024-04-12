@@ -3,7 +3,7 @@
 * Description : Binary to Binary Coded Decimal
 */
 module bin2bcd 
-    #(parameter N = 5)
+    #(parameter N = 8)
     (
         input [N-1:0] data_in,
         output reg [int'(4*$ceil($log10($pow(2, N)))-1)+4:0] data_out
@@ -26,5 +26,3 @@ module bin2bcd
                     data_out[CONSTANT_SIZE_BIN_EXT-1-(4*b)-d -: 4] = data_out[CONSTANT_SIZE_BIN_EXT-1-(4*b)-d -: 4] + 3;
         end
 endmodule
-
-
