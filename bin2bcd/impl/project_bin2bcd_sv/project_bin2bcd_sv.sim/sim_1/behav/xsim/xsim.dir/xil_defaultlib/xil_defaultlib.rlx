@@ -1,7 +1,0 @@
-0.7
-2020.2
-May  7 2023
-15:24:31
-C:/Users/Abel/Documents/GitHub/Hardware_Accelerators/bin2bcd/impl/project_bin2bcd_sv/project_bin2bcd_sv.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/Abel/Documents/GitHub/Hardware_Accelerators/bin2bcd/rtl/bin2bcd.sv,1710235878,systemVerilog,,C:/Users/Abel/Documents/GitHub/Hardware_Accelerators/bin2bcd/tb/tb_bin2bcd.sv,,bin2bcd,,uvm,,,,,,
-C:/Users/Abel/Documents/GitHub/Hardware_Accelerators/bin2bcd/tb/tb_bin2bcd.sv,1710200253,systemVerilog,,,,testbench,,uvm,,,,,,

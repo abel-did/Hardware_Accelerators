@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Abel/Documents/GitHub/Hardware_Accelerators/bin2bcd/rtl/bin2bcd.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin2bcd
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Abel/Documents/GitHub/Hardware_Accelerators/bin2bcd/tb/tb_bin2bcd.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench
